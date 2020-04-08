@@ -53,9 +53,9 @@ class NumberField extends React.Component {
             errorBlock = <p/>;
         }
         return(
-            <div class="form-group">
+            <div className="form-group">
                 <p>{this.props.properties.label}</p>
-                <input class="form-control" type="tel" id={this.props.properties.label} value={this.props.value} onChange={this.onChangeEvent} onFocus={this.onFocus} onBlur={this.onBlur}></input>
+                <input className="form-control" type="tel" id={this.props.properties.label} value={this.props.value} onChange={this.onChangeEvent} onFocus={this.onFocus} onBlur={this.onBlur}></input>
                 {errorBlock}
             </div>
         )
