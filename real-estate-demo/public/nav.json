@@ -1,0 +1,16 @@
+{
+    "navigation":[  
+        {
+            "key":"home",
+            "name":"Home",
+            "url":"/",
+            "component":"Home"
+        },      
+        {
+            "key":"about",
+            "name":"About",
+            "url":"/about",
+            "component":"About"
+        }
+    ]
+}

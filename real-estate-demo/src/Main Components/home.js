@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 // import NumberField from '../Common Components/number.js';
 // import DropdownField from '../Common Components/dropdown.js';
+import PopularProperties from './popularproperties.js';
 import Factories from '../Common Components/factories.js';
 
 function Home () {
@@ -38,10 +39,10 @@ function Home () {
     "value":dropdownValue,
     "onChangeValue":onChangedropValue,
     "dropDownList":[
-      // { value: 'flavor', label: 'flavor' },
-      // { value: 'yummy', label: 'yummy' },
-      // { value: 'red', label: 'red' },
-      // { value: 'green', label: 'green' },
+      { value: 'flavor', label: 'flavor' },
+      { value: 'yummy', label: 'yummy' },
+      { value: 'red', label: 'red' },
+      { value: 'green', label: 'green' },
       { value: 'yellow', label: 'yellow' }
     ],
     "customValidation":function(val) {
@@ -66,6 +67,7 @@ function Home () {
         <DropdownField properties={dropdownField}></DropdownField>         */}
         <Factories control={numberField}></Factories>
         <Factories control={dropdownField}></Factories>
+        <PopularProperties></PopularProperties>
       </div>
       
     ) 
