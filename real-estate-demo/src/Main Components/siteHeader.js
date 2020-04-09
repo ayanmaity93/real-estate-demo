@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/images/logo.png';
 import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import { slide as Menu } from 'react-burger-menu'
 
 
 function SiteHeader () {
@@ -11,6 +12,11 @@ function SiteHeader () {
                     {item.name}
                 </Link>
         </li>
+    );
+    let navLinksMobile = navItems.navigation.map( (item) => 
+        <Link to={item.url} className="menu-item" key={item.key}>
+            {item.name}
+        </Link>
     );
     
   return (
@@ -99,7 +105,11 @@ function SiteHeader () {
                                 </div>
                             </div>
                             <div className="col-12">
-                                <div className="mobile_menu d-block d-lg-none"></div>
+                                <div className="mobile_menu d-block d-lg-none">
+                                    <Menu right >
+                                        {navLinksMobile}
+                                    </Menu>
+                                </div>
                             </div>
                         </div>
                     </div>
