@@ -46,7 +46,7 @@ function PopularProperties () {
             <div className="row">
                 <div className="col-xl-12">
                     <div className="more_property_btn text-center">
-                        <a href="#" className="boxed-btn3-line">More Properties</a>
+                        <a href="" className="boxed-btn3-line">More Properties</a>
                     </div>
                 </div>
             </div>

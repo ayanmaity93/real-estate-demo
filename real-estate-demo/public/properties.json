@@ -9,7 +9,7 @@
             "size":"1200 Sqft",
             "propertyBeds":"2 Bed",
             "propertyBath":"2 Bath",
-            "propertyImage":"./../assets/images/property/1.png"
+            "propertyImage":"1.png"
         },
         {
             "id":"02",
@@ -20,7 +20,7 @@
             "size":"1200 Sqft",
             "propertyBeds":"2 Bed",
             "propertyBath":"2 Bath",
-            "propertyImage":"./../assets/images/property/2.png"
+            "propertyImage":"2.png"
         },
         {
             "id":"03",
@@ -31,7 +31,7 @@
             "size":"1200 Sqft",
             "propertyBeds":"2 Bed",
             "propertyBath":"2 Bath",
-            "propertyImage":"./../assets/images/property/3.png"
+            "propertyImage":"3.png"
         },
         {
             "id":"04",
@@ -42,7 +42,7 @@
             "size":"1200 Sqft",
             "propertyBeds":"2 Bed",
             "propertyBath":"2 Bath",
-            "propertyImage":"./../assets/images/property/4.png"
+            "propertyImage":"4.png"
         },
         {
             "id":"05",
@@ -53,7 +53,7 @@
             "size":"1200 Sqft",
             "propertyBeds":"2 Bed",
             "propertyBath":"2 Bath",
-            "propertyImage":"./../assets/images/property/5.png"
+            "propertyImage":"5.png"
         },
         {
             "id":"06",
@@ -64,7 +64,7 @@
             "size":"1200 Sqft",
             "propertyBeds":"2 Bed",
             "propertyBath":"2 Bath",
-            "propertyImage":"./../assets/images/property/6.png"
+            "propertyImage":"6.png"
         }
     ]
 }
