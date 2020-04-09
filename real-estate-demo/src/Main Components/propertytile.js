@@ -24,7 +24,7 @@ const PropertyTile = (propertydetails) => {
                 <div className="property_thumb">
                     {propertyType}
                     {/* <img src={require(propertyDetail.propertyImage)} alt="" /> */}
-                    <img src={require("./../assets/images/property/1.png")} alt="" />
+                    <img src={require("./../assets/images/property/"+propertyDetail.propertyImage)} alt="" />
                 </div>
                 <div className="property_content">
                     <div className="main_pro">

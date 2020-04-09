@@ -7,7 +7,7 @@ function SiteHeader () {
     let navItems = JSON.parse(localStorage.getItem('navData'));
     let navLinks = navItems.navigation.map( (item) => 
         <li key={item.key}>
-                <Link to={item.key}>
+                <Link to={item.url}>
                     {item.name}
                 </Link>
         </li>
