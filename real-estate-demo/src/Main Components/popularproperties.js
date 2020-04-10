@@ -2,11 +2,17 @@ import React from 'react';
 import PropertyTile from './propertytile.js';
 
 
-function PopularProperties (props) {
+function PropertiesList (props) {
 
     let properties = props.property.propertiesList.map((item)=>
         <PropertyTile key={item.id} propertydetails={item}></PropertyTile>
     ); 
+    let listHeading;
+    if(props.type==="all"){
+        listHeading = <h4>240 Properties found</h4>;
+    } else if(props.type==="popular"){
+        listHeading = <h3>Popular Properties</h3>;
+    }
 
     return(
         <div className="popular_property plus_padding">
@@ -14,7 +20,7 @@ function PopularProperties (props) {
                 <div className="row">
                     <div className="col-xl-12">
                         <div className="section_title mb-40 text-center">
-                            <h3>Popular Properties</h3>
+                            {listHeading}
                         </div>
                     </div>
                 </div>
@@ -33,4 +39,4 @@ function PopularProperties (props) {
     )
 }
 
-export default PopularProperties;
+export default PropertiesList;

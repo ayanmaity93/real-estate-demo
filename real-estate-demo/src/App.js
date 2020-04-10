@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './assets/styles/App.scss';
 import About from './Main Components/about.js';
 import Home from './Main Components/home.js';
+import Property from './Main Components/property.js';
 import AddProperty from './Main Components/addproperty.js';
 import Footer from './Main Components/footer.js';
 import SiteHeader from './Main Components/siteHeader.js';
@@ -56,6 +57,9 @@ function App () {
               {/* {routeItems} */}
               <Route path='/about'>
                 <About></About>
+              </Route>
+              <Route path='/property'>
+                <Property></Property>
               </Route>
               <Route path='/'>
                 <Home ></Home>
