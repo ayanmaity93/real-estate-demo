@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import logo from '../assets/images/logo.png';
-import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu'
 
 

@@ -1,20 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
-// import logo from './../assets/images/logo.png';
 
 
 function About () {
-
-  // useEffect(() => {
-  //   localStorage.clear();
-  //   window.FB.getLoginStatus(function(response) {   
-  //     console.log(response);
-  //     if(response.status == 'connected'){
-  //       localStorage.setItem("userdata",JSON.stringify(response.authResponse));
-  //       setLoginStatus(true);
-  //     }
-  //   });
-  // },[fbInitialize]);
 
   const [isHome,setHome] = useState(false);
   function toHome(){
