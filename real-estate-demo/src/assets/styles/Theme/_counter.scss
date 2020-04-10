@@ -97,7 +97,7 @@
                 ul{
                     margin-bottom: 20px;
                     li{
-                        display: inline-block;
+                        display: inline-flex;
                         margin-right: 41px;
                         @media #{$mobile_device} {
                             margin-right: 7px;
@@ -106,6 +106,7 @@
                             color: #001D38;
                             font-size: 13px;
                             font-weight: 400;
+                            margin-left: 5px;
                         }
                     }
                 }
@@ -117,14 +118,20 @@
                     margin-bottom: 13px;
                 }
                 .prise_view_details{
+                    @media #{$mobile_device} {
+                        width: 100%;
+                        display: block !important;
+                    }
                     span{
                         color: #FF5748;
                         font-size: 24px;
                         font-weight: 500;
-
                     }
                     a{
                         padding: 7px 23px;
+                        @media #{$mobile_device} {
+                            margin-top: 20px;
+                        }                   
                     }
                 }
             }

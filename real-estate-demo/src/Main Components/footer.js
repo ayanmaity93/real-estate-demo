@@ -14,9 +14,9 @@ function Footer(){
                                         </a>
                                     </div>
                                     <p>
-                                            <a href="#">conbusi@support.com</a> <br/>
-                                            +10 873 672 6782 <br/>
-                                            600/D, Green road, NewYork
+                                            <a href="#">abcdef@support.com</a> <br/>
+                                            +91 123 123 1234 <br/>
+                                            600/D, ABCD road, Mumbai
                                     </p>
                                     <div className="socail_links">
                                         <ul>

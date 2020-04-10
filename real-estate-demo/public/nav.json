@@ -5,12 +5,24 @@
             "name":"Home",
             "url":"/",
             "component":"Home"
+        },
+        {
+            "key":"property",
+            "name":"Property",
+            "url":"/property",
+            "component":"Property"
         },      
         {
             "key":"about",
             "name":"About",
             "url":"/about",
             "component":"About"
+        },
+        {
+            "key":"contact",
+            "name":"Contact",
+            "url":"/contact",
+            "component":"Contact"
         }
     ]
 }
