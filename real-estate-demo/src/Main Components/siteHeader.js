@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import logo from '../assets/images/logo.png';
-import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu'
 
 
@@ -95,12 +95,12 @@ function SiteHeader () {
                             <div className="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div className="Appointment">
                                     <div className="search_btn">
-                                        <a href="#">
+                                        <a href="">
                                             <i className="ti-search"></i>
                                         </a>
                                     </div>
                                     <div className="book_btn d-none d-lg-block">
-                                        <a  href="#">Add Property</a>
+                                        <a  href="#add-property">Add Property</a>
                                     </div>
                                 </div>
                             </div>

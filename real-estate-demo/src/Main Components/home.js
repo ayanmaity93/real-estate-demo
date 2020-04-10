@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 // import NumberField from '../Common Components/number.js';
 // import DropdownField from '../Common Components/dropdown.js';
@@ -27,7 +27,7 @@ function Home () {
     "value":numberValue,
     "onChangeValue":onChangeNumberField,
     "customValidation":function(val,thisContext) {
-        if(val==50){
+        if(val===50){
           thisContext.setState({"errorMessage":"This is 50!"});
         }
     }
