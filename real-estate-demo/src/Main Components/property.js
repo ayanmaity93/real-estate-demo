@@ -1,13 +1,9 @@
 import React, { useState,useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
-// import NumberField from '../Common Components/number.js';
-// import DropdownField from '../Common Components/dropdown.js';
 import PropertiesList from './popularproperties.js';
-import PropertyHomeCarousel from './propertyHomeCarousel.js';
-import Testimonials from './testimonials.js';
 import PropertyForm from './propertyForm.js';
 
-function Home () {
+function Property () {
 
   const [isPropertyLoaded,setPropertyLoaded] = useState(false);
   const [proprtyList,setPropertyList] = useState('');
@@ -37,16 +33,12 @@ function Home () {
   } else {
     return(
       <div>
-        {/* <h1>Home Page</h1>
-        <a onClick={toAbout}>Click Here to About Page</a> */}
         <PropertyForm></PropertyForm>
-        <PropertiesList property={proprtyList} type="popular"></PropertiesList>
-        <PropertyHomeCarousel property={proprtyList} ></PropertyHomeCarousel>
-        <Testimonials></Testimonials>
+        <PropertiesList property={proprtyList} type="all"></PropertiesList>
       </div>
       
     ) 
   }
 }
 
-export default Home;
+export default Property;
