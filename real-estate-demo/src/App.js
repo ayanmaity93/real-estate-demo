@@ -3,6 +3,7 @@ import './assets/styles/App.scss';
 import About from './Main Components/about.js';
 import Home from './Main Components/home.js';
 import AddProperty from './Main Components/addproperty.js';
+import Footer from './Main Components/footer.js';
 import SiteHeader from './Main Components/siteHeader.js';
 import {  BrowserRouter as Router,Switch,Route } from "react-router-dom";
 
@@ -48,7 +49,7 @@ function App () {
       <>
       <Router>
         <SiteHeader></SiteHeader>
-          <div className="main-area">
+          <div>
             {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
             <Switch>
@@ -62,6 +63,7 @@ function App () {
             </Switch>
           </div>
           <AddProperty></AddProperty>
+          <Footer></Footer>
         </Router>
       </>
     )               
