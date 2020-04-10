@@ -7,12 +7,11 @@ class NumberField extends React.Component {
         this.onFocus = this.onFocus.bind(this);
         this.onBlur = this.onBlur.bind(this);
         this.props.control.customValidation = (this.props.control.customValidation)?this.props.control.customValidation.bind(this):"";
-        this.state={"value":this.props.control.value};
+        //this.state={"value":this.props.control.value};
     }
 
     onChangeEvent(e){
-        this.setState({"value":e.target.value})
-        this.props.control.setValue(e.target.value);       
+        this.props.control.onChangeValue(e.target.value)      
     }
 
     onFocus(){
@@ -58,7 +57,7 @@ class NumberField extends React.Component {
         return(
             <div className="form-group">
                 <p>{this.props.control.getLabel()}</p>
-                <input className="form-control" type="tel" id={this.props.control.getLabel()} value={this.state.value} onChange={this.onChangeEvent} onFocus={this.onFocus} onBlur={this.onBlur}></input>
+                <input className="form-control" type="tel" id={this.props.control.getLabel()} value={this.props.control.value} onChange={this.onChangeEvent} onFocus={this.onFocus} onBlur={this.onBlur}></input>
                 {errorBlock}
             </div>
         )

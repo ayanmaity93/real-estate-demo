@@ -1,21 +1,21 @@
 import React from 'react';
 
 class DropdownField extends React.Component {
-    constructor(props){
-        super(props);
-        this.state={"value":this.props.control.value || this.props.control.dropDownList[0]};
+    handleChange = (e) => {
+        this.props.control.onChangeValue(e.target);   
     }
-    handleChange = ({ target }) => {
-        this.setState({"value":target.value})
-        this.props.control.setValue(target.value);
-    }
-
     render(){
         return(
-            <div className="form-group">                                
+            <div className="single-field max_width">                                
                 <label>{this.props.control.getLabel()}</label>
-                <select value={this.state.value} className="wide" id={this.props.control.getLabel()} onChange={this.handleChange}>  
-                    {this.props.control.dropDownList.map(({ value, label }, index) => <option key={index} value={value} >{label}</option>)}                    
+                <select value={this.props.control.value} className="nice-select wide" id={this.props.control.getLabel()} onChange={this.handleChange}>  
+                    {this.props.control.dropDownList.map(({ value, label }, index) => <option 
+                    style={{
+                        "background":"transparent",
+                        "color": "black"
+                    }} 
+                        key={index} value={value} >{label}</option>
+                    )}                    
                 </select>
             </div>
         )
