@@ -1,23 +1,27 @@
 .header-area{
     // position: absolute;
-    left: 0;
-    right: 0;
+    // left: 0;
+    // right: 0;
     width: 100%;
-    top: 0;
+    // top: 0;
     z-index: 9;
-    position: absolute;
+    // position: absolute;
     border-bottom: 1px solid rgba(255,255,255,.20);
     // padding-top: 28px;
     @media #{$mobile_device} {
         padding-top: 0;
+        position: fixed;
+        top: 0;
     }
     @media #{$tablet_device} {
         padding-top: 0;
+        position: fixed;
+        top: 0;
     }
     .main-header-area{
         padding: 18px 0;
-        background: #fff;
-        background: transparent;
+        background: #10273C;
+        // background-image: url(../../images/banner/home_details.png);
         &.details_nav_bg{
             background: #727272;
             padding-bottom: 0;
@@ -383,5 +387,14 @@
           position: relative;
           right: 10px;  
         }
+    }
+}
+
+.main-area {
+    @media #{$mobile_device} {
+        margin-top: 100px;
+    }
+    @media #{$tablet_device} {
+        margin-top: 100px;
     }
 }

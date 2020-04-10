@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
-import Factories,  {CreateObject} from '../Common Components/factories.js';
+// import NumberField from '../Common Components/number.js';
+// import DropdownField from '../Common Components/dropdown.js';
+import PopularProperties from './popularproperties.js';
+import Factories from '../Common Components/factories.js';
 
 function Home () {
 
@@ -67,6 +70,7 @@ function Home () {
         <a onClick={toAbout}>Click Here to About Page</a>
         <Factories control={numberField}></Factories>
         <Factories control={dropdownField}></Factories>
+        <PopularProperties></PopularProperties>
       </div>
       
     ) 

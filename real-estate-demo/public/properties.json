@@ -1,0 +1,70 @@
+{
+    "propertiesList":[
+        {
+            "id":"01",
+            "name":"Comfortable Apartment in Palace",
+            "type":"sale",
+            "tag":"Popular Properties",
+            "fee":"From $20k",
+            "size":"1200 Sqft",
+            "propertyBeds":"2 Bed",
+            "propertyBath":"2 Bath",
+            "propertyImage":"1.png"
+        },
+        {
+            "id":"02",
+            "name":"Comfortable Apartment in Palace",
+            "type":"rent",
+            "tag":"Popular Properties",
+            "fee":"$563/month",
+            "size":"1200 Sqft",
+            "propertyBeds":"2 Bed",
+            "propertyBath":"2 Bath",
+            "propertyImage":"2.png"
+        },
+        {
+            "id":"03",
+            "name":"Comfortable Apartment in Palace",
+            "type":"sale",
+            "tag":"Popular Properties",
+            "fee":"From $20k",
+            "size":"1200 Sqft",
+            "propertyBeds":"2 Bed",
+            "propertyBath":"2 Bath",
+            "propertyImage":"3.png"
+        },
+        {
+            "id":"04",
+            "name":"Comfortable Apartment in Palace",
+            "type":"rent",
+            "tag":"Popular Properties",
+            "fee":"$563/month",
+            "size":"1200 Sqft",
+            "propertyBeds":"2 Bed",
+            "propertyBath":"2 Bath",
+            "propertyImage":"4.png"
+        },
+        {
+            "id":"05",
+            "name":"Comfortable Apartment in Palace",
+            "type":"sale",
+            "tag":"Popular Properties",
+            "fee":"From $20k",
+            "size":"1200 Sqft",
+            "propertyBeds":"2 Bed",
+            "propertyBath":"2 Bath",
+            "propertyImage":"5.png"
+        },
+        {
+            "id":"06",
+            "name":"Comfortable Apartment in Palace",
+            "type":"sale",
+            "tag":"Popular Properties",
+            "fee":"From $20k",
+            "size":"1200 Sqft",
+            "propertyBeds":"2 Bed",
+            "propertyBath":"2 Bath",
+            "propertyImage":"6.png"
+        }
+    ]
+}
