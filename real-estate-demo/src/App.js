@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './assets/styles/App.scss';
 import About from './Main Components/about.js';
 import Home from './Main Components/home.js';
+import AddProperty from './Main Components/addproperty.js';
 import SiteHeader from './Main Components/siteHeader.js';
 import {  BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 
@@ -60,6 +61,7 @@ function App () {
               </Route>
             </Switch>
           </div>
+          <AddProperty></AddProperty>
         </Router>
       </>
     )               
