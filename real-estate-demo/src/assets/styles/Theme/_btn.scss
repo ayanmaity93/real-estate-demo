@@ -132,6 +132,10 @@
     &.large-width{
         width: 220px;
     }
+    @media #{$mobile_device} {
+        width: 100%;
+        display: block;
+    }
 }
 .boxed-btn2 {
 	background: transparent;

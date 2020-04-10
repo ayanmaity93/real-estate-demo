@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Carousel } from 'react-responsive-carousel';
 
 
 function Testimonials () {
@@ -47,8 +48,10 @@ function Testimonials () {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12">
-                            <div className="testmonial_active owl-carousel">
-                                {testimonialsList}
+                            <div className="testmonial_active">
+                                <Carousel autoPlay={true} showStatus={false} showIndicators={false} infiniteLoop={true} useKeyboardArrows={true} stopOnHover={true}>
+                                    {testimonialsList}
+                                </Carousel>
                             </div>
                         </div>
                     </div>
