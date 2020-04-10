@@ -13,7 +13,7 @@ const PropertyTile = (propertydetails) => {
     } else if(propertyDetail.type=='rent'){
         propertyType = (
             <div className="property_tag red">
-                    For Sale
+                    For Rent
             </div>
         );
     }
