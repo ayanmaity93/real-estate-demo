@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 // import NumberField from '../Common Components/number.js';
 // import DropdownField from '../Common Components/dropdown.js';
 import PopularProperties from './popularproperties.js';
+import Testimonials from './testimonials.js';
 import Factories from '../Common Components/factories.js';
 
 function Home () {
@@ -68,6 +69,7 @@ function Home () {
         <Factories control={numberField}></Factories>
         <Factories control={dropdownField}></Factories>
         <PopularProperties></PopularProperties>
+        <Testimonials></Testimonials>
       </div>
       
     ) 

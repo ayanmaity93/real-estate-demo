@@ -28,15 +28,15 @@ function SiteHeader () {
                     <div className="row">
                         <div className="col-xl-5 col-md-5 ">
                             <div className="header_left">
-                                <p>Welcome to Conbusi consulting service</p>
+                                <p>Welcome to real estate services</p>
                             </div>
                         </div>
                         <div className="col-xl-7 col-md-7">
                             <div className="header_right d-flex">
                                     <div className="short_contact_list">
                                             <ul>
-                                                <li><a href="#"> <i className="fa fa-envelope"></i> info@docmed.com</a></li>
-                                                <li><a href="#"> <i className="fa fa-phone"></i> 1601-609 6780</a></li>
+                                                <li><a href="#"> <i className="fa fa-envelope"></i> abcd@efghij.com</a></li>
+                                                <li><a href="#"> <i className="fa fa-phone"></i> 1234-123 1234</a></li>
                                             </ul>
                                         </div>
                                         <div className="social_media_links">
