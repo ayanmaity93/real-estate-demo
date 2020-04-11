@@ -6,6 +6,7 @@ import PropertiesList from './popularproperties.js';
 import PropertyHomeCarousel from './propertyHomeCarousel.js';
 import Testimonials from './testimonials.js';
 import PropertyForm from './propertyForm.js';
+import OurAgents from './ouragents.js';
 
 function Home () {
 
@@ -43,6 +44,7 @@ function Home () {
         <PropertiesList property={proprtyList} type="popular"></PropertiesList>
         <PropertyHomeCarousel property={proprtyList} ></PropertyHomeCarousel>
         <Testimonials></Testimonials>
+        <OurAgents></OurAgents>
       </div>
       
     ) 
