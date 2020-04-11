@@ -8,6 +8,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-burger-menu": "^2.6.13",
+    "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
     "react-responsive-carousel": "^3.1.57",
     "react-router-dom": "^5.1.2",
