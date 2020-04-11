@@ -1,8 +1,12 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import { useHistory } from 'react-router-dom';
+import NavigationTo from './../Common Components/navigationService.js'
 
 
 function PropertyHomeCarousel (props) {
+
+    let history = useHistory();
 
     let properties = props.property.propertiesList.map((item)=>
         <div className="single_details" key={item.id}>
@@ -29,7 +33,7 @@ function PropertyHomeCarousel (props) {
                                 <p>{item.smallDesc}</p>
                                 <div className="prise_view_details d-flex justify-content-between align-items-center">
                                     <span>{item.fee}</span>
-                                    <a className="boxed-btn3-line" href="#">View Details</a>
+                                    <a className="boxed-btn3-line" href="" onClick={(e)=>{e.preventDefault(); NavigationTo("propertyDetail", history)}}>View Details</a>
                                 </div>
                             </div>
                         </div>

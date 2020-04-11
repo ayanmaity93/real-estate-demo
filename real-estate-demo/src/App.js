@@ -4,6 +4,7 @@ import About from './Main Components/about.js';
 import Home from './Main Components/home.js';
 import Property from './Main Components/property.js';
 import AddProperty from './Main Components/addproperty.js';
+import PropertyDetail from './Main Components/propertydetail.js';
 import Footer from './Main Components/footer.js';
 import SiteHeader from './Main Components/siteHeader.js';
 import {  BrowserRouter as Router,Switch,Route } from "react-router-dom";
@@ -28,7 +29,7 @@ function App () {
         (result) => {
           let navData = result;
           let routeItems=navData.navigation.map((item,key)=>
-            <Route key={item.key} path={item.url}>
+            <Route key={item.key} path={item.url} render={()=>item.component}>
               {components[item.component]}
             </Route>
           );
@@ -60,6 +61,9 @@ function App () {
               </Route>
               <Route path='/property'>
                 <Property></Property>
+              </Route>
+              <Route path='/propertyDetail'>
+                <PropertyDetail></PropertyDetail>
               </Route>
               <Route path='/'>
                 <Home ></Home>

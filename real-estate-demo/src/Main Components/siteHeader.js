@@ -6,18 +6,42 @@ import { slide as Menu } from 'react-burger-menu'
 
 function SiteHeader () {
     let navItems = JSON.parse(localStorage.getItem('navData'));
-    let navLinks = navItems.navigation.map( (item) => 
-        <li key={item.key}>
-                <Link to={item.url}>
-                    {item.name}
+    let navLinks = [], navLinksMobile = [];
+    // let navLinks = navItems.navigation.map( (item) => 
+    //     {
+    //         if(item.nav){
+    //             <li key={item.key}>
+    //                     <Link to={item.url}>
+    //                         {item.name}
+    //                     </Link>
+    //             </li>
+    //         }
+    //     }
+    // );
+    // let navLinksMobile = navItems.navigation.map( (item) => 
+    //     <Link to={item.url} className="menu-item" key={item.key}>
+    //         {item.name}
+    //     </Link>
+    // );
+
+    for (let x in navItems.navigation){
+        if(navItems.navigation[x].nav){
+            let desktopNav = (
+                <li key={navItems.navigation[x].key}>
+                    <Link to={navItems.navigation[x].url}>
+                        {navItems.navigation[x].name}
+                    </Link>
+                </li>
+            );
+            let mobileNav = (
+                <Link to={navItems.navigation[x].url} className="menu-item" key={navItems.navigation[x].key}>
+                    {navItems.navigation[x].name}
                 </Link>
-        </li>
-    );
-    let navLinksMobile = navItems.navigation.map( (item) => 
-        <Link to={item.url} className="menu-item" key={item.key}>
-            {item.name}
-        </Link>
-    );
+            );
+            navLinks.push(desktopNav);
+            navLinksMobile.push(mobileNav);
+        }
+    }
     
   return (
     <>
