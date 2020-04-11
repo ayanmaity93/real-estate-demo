@@ -1,0 +1,28 @@
+{
+    "agentsList":[
+        {
+            "id":"01",
+            "name":"Dinah Drake",
+            "profilePic":"1.png",
+            "designation":"Business Agent"
+        },
+        {
+            "id":"02",
+            "name":"Adrian Chase",
+            "profilePic":"2.png",
+            "designation":"Business Agent"
+        },
+        {
+            "id":"03",
+            "name":"Oliver Queen",
+            "profilePic":"3.png",
+            "designation":"Business Agent"
+        },
+        {
+            "id":"04",
+            "name":"Tommy Merlyn",
+            "profilePic":"4.png",
+            "designation":"Business Agent"
+        }
+    ]
+}
