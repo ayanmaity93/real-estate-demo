@@ -70,34 +70,34 @@ function PropertyForm (){
             
         }
       });
-      const bedField = instance.create({
-        "label":"Bed Room",
-        "type":'dropdown',
-        "value":bedDropdownValue,
-        "onChangeValue":onChangedropValue,
-        "dropDownList":[
-          { value: '01', label: '01' },
-          { value: '02', label: '02' },
-          { value: '03', label: '03' }
-        ],
-        "customValidation":function(val) {
-            
-        }
-      });
-      const bathField = instance.create({
-        "label":"Bath Type",
-        "type":'dropdown',
-        "value":bathDropdownValue,
-        "onChangeValue":onChangedropValue,
-        "dropDownList":[
-          { value: '01', label: '01' },
-          { value: '02', label: '02' },
-          { value: '03', label: '03' }
-        ],
-        "customValidation":function(val) {
-            
-        }
-      });
+    const bedField = instance.create({
+    "label":"Bed Room",
+    "type":'dropdown',
+    "value":bedDropdownValue,
+    "onChangeValue":onChangedropValue,
+    "dropDownList":[
+        { value: '01', label: '01' },
+        { value: '02', label: '02' },
+        { value: '03', label: '03' }
+    ],
+    "customValidation":function(val) {
+        
+    }
+    });
+    const bathField = instance.create({
+    "label":"Bath Type",
+    "type":'dropdown',
+    "value":bathDropdownValue,
+    "onChangeValue":onChangedropValue,
+    "dropDownList":[
+        { value: '01', label: '01' },
+        { value: '02', label: '02' },
+        { value: '03', label: '03' }
+    ],
+    "customValidation":function(val) {
+        
+    }
+    });
 
     return(
         <div className="slider_area">
@@ -124,7 +124,10 @@ function PropertyForm (){
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                    
+                                    </div>  
+                                     {/* <div className="row col-xl-12" style={{"margin-top":"10px"}}>
+                                        <button type='submit'>Search</button>
+                                    </div>                     */}                  
                                 </form>
                             </div>
                         </div>

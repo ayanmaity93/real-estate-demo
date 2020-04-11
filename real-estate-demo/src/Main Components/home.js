@@ -7,6 +7,7 @@ import PropertyHomeCarousel from './propertyHomeCarousel.js';
 import Testimonials from './testimonials.js';
 import TotalProperties from './totalProperty.js';
 import PropertyForm from './propertyForm.js';
+import FAQs from './faq.js';
 import OurAgents from './ouragents.js';
 
 function Home () {
@@ -42,8 +43,10 @@ function Home () {
         {/* <h1>Home Page</h1>
         <a onClick={toAbout}>Click Here to About Page</a> */}
         <PropertyForm></PropertyForm>
+        {/* <PopularProperties></PopularProperties> */}
         <PropertiesList property={proprtyList} type="popular"></PropertiesList>
         <PropertyHomeCarousel property={proprtyList} ></PropertyHomeCarousel>
+        <FAQs></FAQs>
         <TotalProperties></TotalProperties>
         <Testimonials></Testimonials>
         <OurAgents></OurAgents>
