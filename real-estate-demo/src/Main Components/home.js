@@ -43,10 +43,10 @@ function Home () {
         {/* <h1>Home Page</h1>
         <a onClick={toAbout}>Click Here to About Page</a> */}
         <PropertyForm></PropertyForm>
-        <PopularProperties></PopularProperties>
-        <FAQs></FAQs>
+        {/* <PopularProperties></PopularProperties> */}
         <PropertiesList property={proprtyList} type="popular"></PropertiesList>
         <PropertyHomeCarousel property={proprtyList} ></PropertyHomeCarousel>
+        <FAQs></FAQs>
         <TotalProperties></TotalProperties>
         <Testimonials></Testimonials>
         <OurAgents></OurAgents>
