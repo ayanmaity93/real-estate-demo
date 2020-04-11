@@ -4,6 +4,7 @@ import { Redirect } from 'react-router-dom';
 // import DropdownField from '../Common Components/dropdown.js';
 import PopularProperties from './popularproperties.js';
 import PropertyForm from './propertyForm.js';
+import FAQs from './faq.js';
 
 function Home () {
 
@@ -24,6 +25,7 @@ function Home () {
         <a onClick={toAbout}>Click Here to About Page</a> */}
         <PropertyForm></PropertyForm>
         <PopularProperties></PopularProperties>
+        <FAQs></FAQs>
       </div>
       
     ) 
