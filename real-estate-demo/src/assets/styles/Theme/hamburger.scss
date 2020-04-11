@@ -64,6 +64,9 @@
   .bm-item-list {
     color: #b8b7ad;
     padding: 0.8em;
+    .active {
+      color: rgb(253,174,92);
+    }
   }
   
   /* Individual item */
