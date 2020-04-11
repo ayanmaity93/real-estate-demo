@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/images/logo.png';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu'
 
 
@@ -28,15 +28,15 @@ function SiteHeader () {
         if(navItems.navigation[x].nav){
             let desktopNav = (
                 <li key={navItems.navigation[x].key}>
-                    <Link to={navItems.navigation[x].url}>
+                    <NavLink exact to={navItems.navigation[x].url} activeClassName="active">
                         {navItems.navigation[x].name}
-                    </Link>
+                    </NavLink>
                 </li>
             );
             let mobileNav = (
-                <Link to={navItems.navigation[x].url} className="menu-item" key={navItems.navigation[x].key}>
+                <NavLink exact to={navItems.navigation[x].url} className="menu-item" key={navItems.navigation[x].key} activeClassName="active">
                     {navItems.navigation[x].name}
-                </Link>
+                </NavLink>
             );
             navLinks.push(desktopNav);
             navLinksMobile.push(mobileNav);
