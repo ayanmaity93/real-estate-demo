@@ -5,6 +5,7 @@ import { Redirect } from 'react-router-dom';
 import PropertiesList from './popularproperties.js';
 import PropertyHomeCarousel from './propertyHomeCarousel.js';
 import Testimonials from './testimonials.js';
+import TotalProperties from './totalProperty.js';
 import PropertyForm from './propertyForm.js';
 import OurAgents from './ouragents.js';
 
@@ -43,6 +44,7 @@ function Home () {
         <PropertyForm></PropertyForm>
         <PropertiesList property={proprtyList} type="popular"></PropertiesList>
         <PropertyHomeCarousel property={proprtyList} ></PropertyHomeCarousel>
+        <TotalProperties></TotalProperties>
         <Testimonials></Testimonials>
         <OurAgents></OurAgents>
       </div>

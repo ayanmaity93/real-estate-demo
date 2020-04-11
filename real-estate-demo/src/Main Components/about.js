@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import Testimonials from './testimonials.js';
+import TotalProperties from './totalProperty.js';
 import OurAgents from './ouragents.js';
 
 
@@ -25,6 +26,7 @@ function About () {
             </div>
           </div>
         </div>
+        <TotalProperties></TotalProperties>
         <Testimonials></Testimonials>
         <OurAgents></OurAgents>
       </>
