@@ -8,6 +8,7 @@ import PropertyDetail from './Main Components/propertydetail.js';
 import Footer from './Main Components/footer.js';
 import SiteHeader from './Main Components/siteHeader.js';
 import {  BrowserRouter as Router,Switch,Route } from "react-router-dom";
+import ScrollToTop from 'react-router-scroll-top'
 
 
 function App () {
@@ -57,16 +58,24 @@ function App () {
             <Switch>
               {/* {routeItems} */}
               <Route path='/about'>
-                <About></About>
+                <ScrollToTop>
+                  <About></About>
+                </ScrollToTop>
               </Route>
               <Route path='/property'>
-                <Property></Property>
+                <ScrollToTop>
+                  <Property></Property>
+                </ScrollToTop>
               </Route>
               <Route path='/propertyDetail'>
-                <PropertyDetail></PropertyDetail>
+                <ScrollToTop>
+                  <PropertyDetail></PropertyDetail>
+                </ScrollToTop>
               </Route>
               <Route path='/'>
-                <Home ></Home>
+                <ScrollToTop>
+                  <Home ></Home>
+                </ScrollToTop>
               </Route>
             </Switch>
           </div>
