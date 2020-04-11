@@ -1,0 +1,37 @@
+{
+    "propertiesList": {
+        "id":"01",
+        "name":"Comfortable Apartment in Palace",
+        "address": "200/A, XYZ, ABCD, Mumbai",
+        "type":"sale",
+        "tag":"Popular Properties",
+        "fee":"$4567k",
+        "size":"1200 Sqft",
+        "propertyBeds":"2 Bed",
+        "propertyBath":"2 Bath",
+        "propertyImage":"1.png",
+        "contact": "+91 123 123 1234",
+        "propertyImages" : [
+            {
+                "imagePath":"property_details.png"
+            },
+            {
+                "imagePath":"property_details.png"
+            },
+            {
+                "imagePath":"property_details.png"
+            }
+        ],
+        "fullDesc":[
+            {
+                "text":"Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable."
+            },
+            {
+                "text":"Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable."
+            },
+            {
+                "text":"Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable."
+            }
+        ]
+    }
+}

@@ -1,8 +1,11 @@
 import React from 'react';
+import NavigationTo from './../Common Components/navigationService.js';
+import { useHistory } from 'react-router-dom';
 
 
 const PropertyTile = (propertydetails) => {
     let propertyType;
+    let history = useHistory();
     let propertyDetail = propertydetails.propertydetails;
     if(propertyDetail.type=='sale'){
         propertyType = (
@@ -27,7 +30,7 @@ const PropertyTile = (propertydetails) => {
                 </div>
                 <div className="property_content">
                     <div className="main_pro">
-                            <h3><a href="#">{propertyDetail.name}</a></h3>
+                            <h3><a href="" onClick={(e)=>{e.preventDefault(); NavigationTo("propertyDetail", history)}}>{propertyDetail.name}</a></h3>
                             <div className="mark_pro">
                                 <img src={require("./../assets/images/svg_icon/location.svg")} alt="" />
                                 <span>{propertyDetail.tag}</span>
