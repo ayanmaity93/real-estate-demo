@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Factories, {CreateObject} from '../Common Components/factories.js';
 
-function PropertyForm (){
+function PropertyForm (properties){
     //const [numberValue,setNumberValue] = useState('');
     // const onChangeNumberField = function(val){
     //   setNumberValue(val);
@@ -20,7 +20,14 @@ function PropertyForm (){
     //         return "This is 50!";
     //       }
     //   }
-    // });  
+    // });
+    let props=properties.properties;
+    let heading ={
+        "pageId":props.pageId,
+        "mainHeading":props.mainHeading,
+        "subHeading":props.subHeading,
+        "imageClass":"single_slider d-flex align-items-center " +props.imageClass
+    };
     const [locationDropdownValue,setLocation] = useState('');
     const [propertyDropdownValue,setProperty] = useState('');
     const [bedDropdownValue,setBed] = useState('');
@@ -98,38 +105,45 @@ function PropertyForm (){
         
     }
     });
+    function formData(){
+        if(heading.pageId=="home" || heading.pageId=="property"){
+            return(
+                <div className="property_form">
+                    <form onSubmit="#">
+                        <div className="row">
+                            <div className="col-xl-12">
+                                <div className="form_wrap d-flex">
+                                    {/* <Factories control={numberField}></Factories> */}
+                                    <Factories control={locationDropdown}></Factories>
+                                    <Factories control={propertyField}></Factories>
+                                    <Factories control={bedField}></Factories>
+                                    <Factories control={bathField}></Factories>
+                                    <div className="serach_icon">
+                                        <button type='submit'>Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                            {/* <div className="row col-xl-12" style={{"margin-top":"10px"}}>
+                            <button type='submit'>Search</button>
+                        </div>                     */}                  
+                    </form>
+                </div>
+            );
+        }
+    }
 
     return(
         <div className="slider_area">
-            <div className="single_slider  d-flex align-items-center slider_bg_1">
+            <div className={heading.imageClass}>
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-xl-10 offset-xl-1">
                             <div className="slider_text text-center justify-content-center">
-                                <h3>Find your best Property</h3>
-                                <p>Esteem spirit temper too say adieus who direct esteem.</p>
+                                <h3>{heading.mainHeading}</h3>
+                                <p>{heading.subHeading}</p>
                             </div>
-                            <div className="property_form">
-                                <form onSubmit="#">
-                                    <div className="row">
-                                        <div className="col-xl-12">
-                                            <div className="form_wrap d-flex">
-                                                {/* <Factories control={numberField}></Factories> */}
-                                                <Factories control={locationDropdown}></Factories>
-                                                <Factories control={propertyField}></Factories>
-                                                <Factories control={bedField}></Factories>
-                                                <Factories control={bathField}></Factories>
-                                                <div className="serach_icon">
-                                                    <button type='submit'>Search</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  
-                                     {/* <div className="row col-xl-12" style={{"margin-top":"10px"}}>
-                                        <button type='submit'>Search</button>
-                                    </div>                     */}                  
-                                </form>
-                            </div>
+                            {formData()}
                         </div>
                     </div>
                 </div>

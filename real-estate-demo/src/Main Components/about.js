@@ -4,12 +4,19 @@ import Testimonials from './testimonials.js';
 import FAQs from './faq.js';
 import TotalProperties from './totalProperty.js';
 import OurAgents from './ouragents.js';
+import PropertyForm from './propertyForm.js';
 
 
 function About () {
-
+  let propertyCompHeading ={
+    "pageId":"about",
+    "mainHeading":"About Us",
+    "subHeading":"",
+    "imageClass":"bradcam_bg_1"
+  };
     return(
       <>
+        <PropertyForm properties={propertyCompHeading}></PropertyForm>
         <div className="about_mission">
           <div className="container">
             <div className="row align-items-center">

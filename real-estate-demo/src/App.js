@@ -53,7 +53,6 @@ function App () {
       <>
       <Router>
         <SiteHeader></SiteHeader>
-          <div>
             {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
             <Switch>
@@ -84,7 +83,6 @@ function App () {
                 </ScrollToTop>
               </Route>
             </Switch>
-          </div>
           <AddProperty></AddProperty>
           <Footer></Footer>
         </Router>
