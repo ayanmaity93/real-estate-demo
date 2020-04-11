@@ -1,15 +1,14 @@
-import { useHistory } from "react-router-dom";
+// import React from 'react';
 
-function navigationTo (key){
-    let history = useHistory();
+function NavigationTo (key, history){
 
     let navigationData = JSON.parse(localStorage.getItem('navData'));
 
     let navObj;
 
     for (let x in navigationData.navigation){
-        if (x.key==key){
-            navObj = x;
+        if (navigationData.navigation[x].key==key){
+            navObj = navigationData.navigation[x];
             break;
         }
     }
@@ -17,4 +16,4 @@ function navigationTo (key){
     history.push(navObj.url);
 }
 
-export default navigationTo;
+export default NavigationTo;

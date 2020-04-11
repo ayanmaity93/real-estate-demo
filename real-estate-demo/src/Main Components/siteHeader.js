@@ -1,23 +1,47 @@
 import React from 'react';
 import logo from '../assets/images/logo.png';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu'
 
 
 function SiteHeader () {
     let navItems = JSON.parse(localStorage.getItem('navData'));
-    let navLinks = navItems.navigation.map( (item) => 
-        <li key={item.key}>
-                <Link to={item.url}>
-                    {item.name}
-                </Link>
-        </li>
-    );
-    let navLinksMobile = navItems.navigation.map( (item) => 
-        <Link to={item.url} className="menu-item" key={item.key}>
-            {item.name}
-        </Link>
-    );
+    let navLinks = [], navLinksMobile = [];
+    // let navLinks = navItems.navigation.map( (item) => 
+    //     {
+    //         if(item.nav){
+    //             <li key={item.key}>
+    //                     <Link to={item.url}>
+    //                         {item.name}
+    //                     </Link>
+    //             </li>
+    //         }
+    //     }
+    // );
+    // let navLinksMobile = navItems.navigation.map( (item) => 
+    //     <Link to={item.url} className="menu-item" key={item.key}>
+    //         {item.name}
+    //     </Link>
+    // );
+
+    for (let x in navItems.navigation){
+        if(navItems.navigation[x].nav){
+            let desktopNav = (
+                <li key={navItems.navigation[x].key}>
+                    <NavLink exact to={navItems.navigation[x].url} activeClassName="active">
+                        {navItems.navigation[x].name}
+                    </NavLink>
+                </li>
+            );
+            let mobileNav = (
+                <NavLink exact to={navItems.navigation[x].url} className="menu-item" key={navItems.navigation[x].key} activeClassName="active">
+                    {navItems.navigation[x].name}
+                </NavLink>
+            );
+            navLinks.push(desktopNav);
+            navLinksMobile.push(mobileNav);
+        }
+    }
     
   return (
     <>
@@ -28,15 +52,15 @@ function SiteHeader () {
                     <div className="row">
                         <div className="col-xl-5 col-md-5 ">
                             <div className="header_left">
-                                <p>Welcome to Conbusi consulting service</p>
+                                <p>Welcome to real estate services</p>
                             </div>
                         </div>
                         <div className="col-xl-7 col-md-7">
                             <div className="header_right d-flex">
                                     <div className="short_contact_list">
                                             <ul>
-                                                <li><a href="#"> <i className="fa fa-envelope"></i> info@docmed.com</a></li>
-                                                <li><a href="#"> <i className="fa fa-phone"></i> 1601-609 6780</a></li>
+                                                <li><a href="#"> <i className="fa fa-envelope"></i> abcd@efghij.com</a></li>
+                                                <li><a href="#"> <i className="fa fa-phone"></i> 1234-123 1234</a></li>
                                             </ul>
                                         </div>
                                         <div className="social_media_links">

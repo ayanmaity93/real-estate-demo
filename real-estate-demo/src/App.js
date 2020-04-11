@@ -2,10 +2,14 @@ import React, { useState, useEffect } from 'react';
 import './assets/styles/App.scss';
 import About from './Main Components/about.js';
 import Home from './Main Components/home.js';
+import Property from './Main Components/property.js';
 import AddProperty from './Main Components/addproperty.js';
+import PropertyDetail from './Main Components/propertydetail.js';
 import Footer from './Main Components/footer.js';
 import SiteHeader from './Main Components/siteHeader.js';
+import Contact from './Main Components/contact.js';
 import {  BrowserRouter as Router,Switch,Route } from "react-router-dom";
+import ScrollToTop from 'react-router-scroll-top'
 
 
 function App () {
@@ -27,7 +31,7 @@ function App () {
         (result) => {
           let navData = result;
           let routeItems=navData.navigation.map((item,key)=>
-            <Route key={item.key} path={item.url}>
+            <Route key={item.key} path={item.url} render={()=>item.component}>
               {components[item.component]}
             </Route>
           );
@@ -55,10 +59,29 @@ function App () {
             <Switch>
               {/* {routeItems} */}
               <Route path='/about'>
-                <About></About>
+                <ScrollToTop>
+                  <About></About>
+                </ScrollToTop>
+              </Route>
+              <Route path='/property'>
+                <ScrollToTop>
+                  <Property></Property>
+                </ScrollToTop>
+              </Route>
+              <Route path='/contact'>
+                <ScrollToTop>
+                  <Contact></Contact>
+                </ScrollToTop>
+              </Route>
+              <Route path='/propertyDetail'>
+                <ScrollToTop>
+                  <PropertyDetail></PropertyDetail>
+                </ScrollToTop>
               </Route>
               <Route path='/'>
-                <Home ></Home>
+                <ScrollToTop>
+                  <Home ></Home>
+                </ScrollToTop>
               </Route>
             </Switch>
           </div>

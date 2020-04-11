@@ -13,7 +13,7 @@ function AddProperty () {
                     </div>
                     <div className="col-xl-5">
                         <div className="call_add_action">
-                            <span>+10 637 367 4567</span>
+                            <span>+91 123 123 1234</span>
                             <a href="" className="boxed-btn3-line">Add Property</a>
                         </div>
                     </div>

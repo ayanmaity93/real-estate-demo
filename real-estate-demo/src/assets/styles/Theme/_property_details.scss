@@ -1,6 +1,6 @@
 .property_details{
     position: relative;
-    margin-top: -151px;
+    margin-top: 50px;
     padding-bottom: 90px;
     @media #{$mobile_device} {
         padding-bottom: 40px;
@@ -39,6 +39,7 @@
 
     // details_info 
     .details_info{
+        margin-bottom: 60px;
         h4{
             font-size: 22px;
             font-weight: 500;
@@ -118,10 +119,13 @@
 
 .property_details_banner{
     background: #10273C;
-    padding: 250px 0 210px 0;
+    padding: 50px 0 50px 0;
 
     @media #{$mobile_device} {
-        padding: 200px 0 210px 0;
+        padding: 100px 0 50px 0;
+    }
+    @media #{$tablet_device} {
+        padding: 100px 0 50px 0;
     }
     .comfortable_apartment{
         h4{
@@ -178,6 +182,10 @@
             &:hover{
                 background: #FDAE5C;
                 color: #fff;
+            }
+            @media #{$mobile_device} {
+                text-align: center;
+                width: 100%;;
             }
         }
     }
