@@ -7,6 +7,7 @@ import AddProperty from './Main Components/addproperty.js';
 import PropertyDetail from './Main Components/propertydetail.js';
 import Footer from './Main Components/footer.js';
 import SiteHeader from './Main Components/siteHeader.js';
+import Contact from './Main Components/contact.js';
 import {  BrowserRouter as Router,Switch,Route } from "react-router-dom";
 import ScrollToTop from 'react-router-scroll-top'
 
@@ -65,6 +66,11 @@ function App () {
               <Route path='/property'>
                 <ScrollToTop>
                   <Property></Property>
+                </ScrollToTop>
+              </Route>
+              <Route path='/contact'>
+                <ScrollToTop>
+                  <Contact></Contact>
                 </ScrollToTop>
               </Route>
               <Route path='/propertyDetail'>
