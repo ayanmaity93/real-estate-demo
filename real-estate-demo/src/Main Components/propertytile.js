@@ -7,13 +7,13 @@ const PropertyTile = (propertydetails) => {
     let propertyType;
     let history = useHistory();
     let propertyDetail = propertydetails.propertydetails;
-    if(propertyDetail.type=='sale'){
+    if(propertyDetail.type==='sale'){
         propertyType = (
             <div className="property_tag">
                     For Sale
             </div>
         );
-    } else if(propertyDetail.type=='rent'){
+    } else if(propertyDetail.type==='rent'){
         propertyType = (
             <div className="property_tag red">
                     For Rent

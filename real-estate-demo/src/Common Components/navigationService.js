@@ -7,7 +7,7 @@ function NavigationTo (key, history){
     let navObj;
 
     for (let x in navigationData.navigation){
-        if (navigationData.navigation[x].key==key){
+        if (navigationData.navigation[x].key===key){
             navObj = navigationData.navigation[x];
             break;
         }
