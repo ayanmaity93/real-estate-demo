@@ -1,10 +1,17 @@
 import React from 'react';
-
+import PropertyForm from './propertyForm.js';
 
 function Contact () {
+    let propertyCompHeading ={
+        "pageId":"contact",
+        "mainHeading":"Contact Us",
+        "subHeading":"",
+        "imageClass":"bradcam_bg_1"
+    };
 
     return(
       <>
+        <PropertyForm properties={propertyCompHeading}></PropertyForm>
         <section className="contact-section">
             <div className="container">
                 <div className="row">

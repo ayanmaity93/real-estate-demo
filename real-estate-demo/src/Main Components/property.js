@@ -7,7 +7,12 @@ function Property () {
 
   const [isPropertyLoaded,setPropertyLoaded] = useState(false);
   const [proprtyList,setPropertyList] = useState('');
-
+  let propertyCompHeading ={
+    "pageId":"property",
+    "mainHeading":"Search Property",
+    "subHeading":"",
+    "imageClass":"property_bg"
+};
   useEffect(() => {
     fetch("http://localhost:3000/properties.json",{
       method: "GET"})
@@ -33,7 +38,7 @@ function Property () {
   } else {
     return(
       <div>
-        <PropertyForm></PropertyForm>
+        <PropertyForm properties={propertyCompHeading}></PropertyForm>
         <PropertiesList property={proprtyList} type="all"></PropertiesList>
       </div>
       

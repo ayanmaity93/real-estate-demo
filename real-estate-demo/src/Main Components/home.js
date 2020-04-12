@@ -14,6 +14,12 @@ function Home () {
 
   const [isPropertyLoaded,setPropertyLoaded] = useState(false);
   const [proprtyList,setPropertyList] = useState('');
+  let propertyCompHeading ={
+    "pageId":"home",
+    "mainHeading":"Find your best Property",
+    "subHeading":"Esteem spirit temper too say adieus who direct esteem.",
+    "imageClass":"slider_bg_1"
+  };
 
   useEffect(() => {
     fetch("http://localhost:3000/properties.json",{
@@ -39,10 +45,10 @@ function Home () {
     )
   } else {
     return(
-      <div>
+      <React.Fragment>
         {/* <h1>Home Page</h1>
         <a onClick={toAbout}>Click Here to About Page</a> */}
-        <PropertyForm></PropertyForm>
+        <PropertyForm properties={propertyCompHeading}></PropertyForm>
         {/* <PopularProperties></PopularProperties> */}
         <PropertiesList property={proprtyList} type="popular"></PropertiesList>
         <PropertyHomeCarousel property={proprtyList} ></PropertyHomeCarousel>
@@ -50,8 +56,7 @@ function Home () {
         <TotalProperties></TotalProperties>
         <Testimonials></Testimonials>
         <OurAgents></OurAgents>
-      </div>
-      
+      </React.Fragment>
     ) 
   }
 }
