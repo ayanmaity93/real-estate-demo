@@ -1,4 +1,4 @@
-React JS Real Estate Demo
+React JS Real Estate Sample Project
 
 Recommended Softwares
 ----------------------------
