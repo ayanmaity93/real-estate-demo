@@ -31,7 +31,7 @@ function TotalProperties () {
                         <div className="col-xl-4 col-md-4">
                             <div className="single_counter">
                                 
-                                <CountUp start={0} end={isTotalCount.propertyCount.sale} delay={0} duration={50}>
+                                <CountUp start={0} end={parseInt(isTotalCount.propertyCount.sale)} delay={0} duration={50}>
                                     {({ countUpRef }) => (
                                         <>
                                             <h3> <span  className="counter" ref={countUpRef} ></span> <span>+</span> </h3>
@@ -43,7 +43,7 @@ function TotalProperties () {
                         </div>
                         <div className="col-xl-4 col-md-4">
                             <div className="single_counter">
-                                <CountUp start={0} end={isTotalCount.propertyCount.rent} delay={0} duration={50}>
+                                <CountUp start={0} end={parseInt(isTotalCount.propertyCount.rent)} delay={0} duration={50}>
                                     {({ countUpRef }) => (
                                         <>
                                             <h3> <span  className="counter" ref={countUpRef} ></span> </h3>
@@ -55,7 +55,7 @@ function TotalProperties () {
                         </div>
                         <div className="col-xl-4 col-md-4">
                             <div className="single_counter">
-                                <CountUp start={0} end={isTotalCount.propertyCount.pg} delay={0} duration={50}>
+                                <CountUp start={0} end={parseInt(isTotalCount.propertyCount.pg)} delay={0} duration={50}>
                                     {({ countUpRef }) => (
                                         <>
                                             <h3> <span  className="counter" ref={countUpRef} ></span> </h3>

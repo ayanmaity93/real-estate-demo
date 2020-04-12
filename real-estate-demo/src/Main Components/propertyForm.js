@@ -109,7 +109,7 @@ function PropertyForm (properties){
         if(heading.pageId=="home" || heading.pageId=="property"){
             return(
                 <div className="property_form">
-                    <form onSubmit="#">
+                    <form onSubmit={()=>{}}>
                         <div className="row">
                             <div className="col-xl-12">
                                 <div className="form_wrap d-flex">

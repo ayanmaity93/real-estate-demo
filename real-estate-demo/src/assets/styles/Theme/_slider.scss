@@ -18,7 +18,7 @@
         opacity: .6;
     }
     .single_slider{
-        height: 900px;
+        height: 500px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -117,21 +117,24 @@
             }
         }
     } 
-    .serach_icon a {
-        width: 45px;
-        height: 45px;
+    .serach_icon button {
+        width: 100px;
+        // height: 45px;
         background: #FD8E5E;
         text-align: center;
         line-height: 45px;
         color: #fff;
         border-radius: 5px;
+        margin-top: 25px;
         display: inline-block;
         @media #{$mobile_device} {
             width: 100%;
             margin-bottom: 15px;
+            margin-top: 0;
         }
         @media #{$tablet_device} {
             width: 50%;
+            margin-top: 0;
          }
     }
     .serach_icon {
