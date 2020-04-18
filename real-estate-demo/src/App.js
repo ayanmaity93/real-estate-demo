@@ -24,7 +24,7 @@ function App () {
 
   useEffect(() => {
     localStorage.clear();
-    fetch("http://localhost:3000/nav.json",{
+    fetch("nav.json",{
       method: "GET"})
       .then(res => res.json())
       .then(

@@ -14,7 +14,7 @@ function Property () {
     "imageClass":"property_bg"
 };
   useEffect(() => {
-    fetch("http://localhost:3000/properties.json",{
+    fetch("properties.json",{
       method: "GET"})
     .then(res => res.json())
     .then(
