@@ -38,7 +38,7 @@ function FAQs(){
     const [QuesAnsList,setQuesAnsList] = useState('');
 
     useEffect(() => {
-        fetch("http://localhost:3000/qna.json",{
+        fetch("qna.json",{
           method: "GET"})
         .then(res => res.json())
         .then(

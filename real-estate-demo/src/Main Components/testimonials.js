@@ -8,7 +8,7 @@ function Testimonials () {
     const [testimonialsList,setTestimonialsList] = useState('');
 
     useEffect(() => {
-        fetch("http://localhost:3000/testimonials.json",{
+        fetch("testimonials.json",{
           method: "GET"})
         .then(res => res.json())
         .then(

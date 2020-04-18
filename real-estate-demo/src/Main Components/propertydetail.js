@@ -6,7 +6,7 @@ function PropertyDetail () {
     const [isDetails,setDetails] = useState('');
 
     useEffect(() => {
-        fetch("http://localhost:3000/propertiesDetail.json",{
+        fetch("propertiesDetail.json",{
         method: "GET"})
         .then(res => res.json())
         .then(

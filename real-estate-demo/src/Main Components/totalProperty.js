@@ -7,7 +7,7 @@ function TotalProperties () {
     const [isTotalCount,setTotalCount] = useState('');
 
     useEffect(() => {
-        fetch("http://localhost:3000/totalproperty.json",{
+        fetch("totalproperty.json",{
           method: "GET"})
         .then(res => res.json())
         .then(

@@ -5,7 +5,7 @@ function OurAgents () {
     const [isAgents,setAgents] = useState('');
 
     useEffect(() => {
-        fetch("http://localhost:3000/agents.json",{
+        fetch("agents.json",{
         method: "GET"})
         .then(res => res.json())
         .then(
