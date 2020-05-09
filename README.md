@@ -1,5 +1,7 @@
 React JS Real Estate Sample Project
 
+Live Demo: https://master.d1pp3vl5jt9see.amplifyapp.com/
+
 Recommended Softwares
 ----------------------------
 1) Git
