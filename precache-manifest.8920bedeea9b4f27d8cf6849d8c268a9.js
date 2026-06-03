@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1726a4497618fcdfdd331cbdc5461bb0",
+    "revision": "25edf53d271687af7a434314b7fb88c6",
     "url": "/real-estate-demo/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/real-estate-demo/static/css/2.183aa86f.chunk.css"
   },
   {
-    "revision": "e481dcb94bed35211944",
-    "url": "/real-estate-demo/static/css/main.0394b24a.chunk.css"
+    "revision": "9db9844861a1331aacfc",
+    "url": "/real-estate-demo/static/css/main.52ff7832.chunk.css"
   },
   {
     "revision": "32b73599a5a7f94f43a7",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/real-estate-demo/static/js/2.8022140c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e481dcb94bed35211944",
-    "url": "/real-estate-demo/static/js/main.210688cc.chunk.js"
+    "revision": "9db9844861a1331aacfc",
+    "url": "/real-estate-demo/static/js/main.7a243c5b.chunk.js"
   },
   {
     "revision": "01cdb9b08a39ab02ee5d",
@@ -144,28 +144,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/real-estate-demo/static/media/banner_2.6c1789be.png"
   },
   {
-    "revision": "723f5c79344bfc48c97120a86a3b9ce1",
-    "url": "/real-estate-demo/static/media/bath.723f5c79.svg"
+    "revision": "7ee686eac5c02d913dad5ffb9883d9b8",
+    "url": "/real-estate-demo/static/media/bath.7ee686ea.svg"
   },
   {
-    "revision": "c7e8c8815e5c3a5bdc6c6669d0d112cf",
-    "url": "/real-estate-demo/static/media/bed.c7e8c881.svg"
+    "revision": "e9594ac11f325c57dd040356ab9eb33b",
+    "url": "/real-estate-demo/static/media/bed.e9594ac1.svg"
   },
   {
     "revision": "a12e0353d78d6cb07b1a43202b91a04c",
     "url": "/real-estate-demo/static/media/bradcam.a12e0353.png"
   },
   {
-    "revision": "aca9cba3f2743a71dc027ad621695806",
-    "url": "/real-estate-demo/static/media/color_bath.aca9cba3.svg"
+    "revision": "ff48837c0b50fb6117afaa73c0225449",
+    "url": "/real-estate-demo/static/media/color_bath.ff48837c.svg"
   },
   {
-    "revision": "5468451b86bf92ee6c911a15f77effcb",
-    "url": "/real-estate-demo/static/media/color_bed.5468451b.svg"
+    "revision": "cb8a85e1c08efba1eb4bc4ae14f58a25",
+    "url": "/real-estate-demo/static/media/color_bed.cb8a85e1.svg"
   },
   {
-    "revision": "dd91a344b49c3f6c3121419ae1cdae81",
-    "url": "/real-estate-demo/static/media/color_box.dd91a344.svg"
+    "revision": "e967300d5b15c3638f7920e41dfbf8ab",
+    "url": "/real-estate-demo/static/media/color_box.e967300d.svg"
   },
   {
     "revision": "d9feec78bc424611d85003ec45c78789",
@@ -204,8 +204,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/real-estate-demo/static/media/info_banner.a2627b34.png"
   },
   {
-    "revision": "df6da7e4ed6c220fb4ffa1fce3bcbd61",
-    "url": "/real-estate-demo/static/media/location.df6da7e4.svg"
+    "revision": "530f22a5c41188f0bf18e664aed3c591",
+    "url": "/real-estate-demo/static/media/location.530f22a5.svg"
   },
   {
     "revision": "a12e0353d78d6cb07b1a43202b91a04c",
@@ -216,12 +216,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/real-estate-demo/static/media/property_details.a088058f.png"
   },
   {
-    "revision": "958d151e2ae01409b59a6b502ab252de",
-    "url": "/real-estate-demo/static/media/quote.958d151e.svg"
+    "revision": "b8aeb2494d060ae68d9b99b3f5b37382",
+    "url": "/real-estate-demo/static/media/quote.b8aeb249.svg"
   },
   {
-    "revision": "2873b41755fcf21102a64c891a4f29e4",
-    "url": "/real-estate-demo/static/media/square.2873b417.svg"
+    "revision": "faa2cdfc99e4c7bf46b06df70a1b6cb6",
+    "url": "/real-estate-demo/static/media/square.faa2cdfc.svg"
   },
   {
     "revision": "5a13f5c4d03fb7d51ffd9cb9caaa6ec6",
